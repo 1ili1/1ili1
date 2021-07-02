@@ -1,0 +1,19 @@
+local request = request or http_request or syn and syn.request or false
+local HttpService = game:GetService("HttpService")
+local decoded = HttpService:JSONDecode(request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body);
+local hwids = {"Syn-Fingerprint", "Exploit-Guid", "Proto-User-Identifier", "Sentinel-Fingerprint", "Krnl-Hwid"};
+
+local hwid;
+for i, v in next, hwids do
+    if decoded.headers[v] then
+        hwid = decoded.headers[v];
+        break
+    end
+end
+
+if hwid then
+    setclipboard(hwid)
+    game:GetService("Players").LocalPlayer:Kick('copied hwid to clipboard (in YBA GUI channel/bot DMs type !hwid [your_hwid])')
+else
+    game:GetService("Players").LocalPlayer:Kick('unable to find hwid')
+end
