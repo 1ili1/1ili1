@@ -1,1 +1,1 @@
--novid -novr -nohltv -noipx -nosync -nojoy -noaafonts -nocrashdialog -noforcemaccel -noforcemspd -useforcedmparms -high -map dota -prewarm -nod3d9ex -dx11 -32bit -threads 2 +fps_max 59 -freq 60 -console -autoconfig
+-novid -novr -nohltv -noipx -nosync -nojoy -noaafonts -nocrashdialog -noforcemaccel -noforcemspd -useforcedmparms -high -map dota -prewarm -gamestateintegration -nod3d9ex -dx11 -32bit -threads 2 +fps_max 59 -freq 60 -console -autoconfig
