@@ -1,1 +1,1 @@
--console -novid -noipx -map dota -nocrashdialog -dota_embers 0 -nod3d9ex -noaafonts -dx11 -32bit -nosync -nojoy -forceservice -single_core -norepairfiles -skipstreamingdrivers -prewarm +mat_hdr_level 0 +r_waterforcereflectencities 0 +r_shadowrendertotexture 0
+-console -novid -noaafonts -nojoy -high -skipstreamingdrivers -map dota -nocrashdialog -nocrashmonitor -norepairfiles -noverifyfiles -nodircheck -nocache -nohltv -single_core -prewarm -processheap -limitvsconst rendersystem_thread_mode 2 -32bit -nod3d9ex
